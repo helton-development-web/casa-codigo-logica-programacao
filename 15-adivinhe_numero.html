@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADIVINHE O NÚMERO QUE EU ESTOU PENSANDO!</title>
+</head>
+<body>
+    <script>
+        
+        
+        let numeroPensado = Math.round(Math.random() * 100);
+        let chute = prompt("Já pensei. Qual você acha que é?");
+        if (chute != numeroPensado){
+            document.write("Você errou! Eu tinha pensado no " + numeroPensado)
+        }
+        else if(chute == numeroPensado) {
+            document.write("Uau! Você acertou, pois eu pensei no " + numeroPensado);
+
+        }
+      
+    </script>
+
+</body>
+</html>

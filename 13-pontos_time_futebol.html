@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontos do Time de Futebol</title>
+</head>
+<body>
+
+    <script>
+        let vitorias = prompt("Quantas jogos seu time venceu?");
+        let vitoriasComoNumero = parseInt(vitorias);
+        let empates = prompt("Quantos jogos seu time empatou?");
+        let empatesComoNumero = parseInt(empates);
+        let pontos = (vitoriasComoNumero * 3) + empatesComoNumero;
+        let mostrar = function(texto) {
+            document.write("<hr>" + texto + "<hr>");
+        }
+        mostrar(pontos);
+        if (pontos > 28) {
+            mostrar("Seu time está MELHOR!")
+        }
+        else if(pontos < 28){
+            mostrar("Seu time está PIOR!")    
+        }
+        else if (pontos == 28){
+            mostrar("Seu time está EMPATADO!")
+        }
+    </script>
+
+</body>
+</html>
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC - IDEAL</title>
+</head>
+<body>
+
+    <script>
+        let altura = prompt("Digite sua altura");
+        let peso = prompt("Digite seu peso");
+        let imc = peso / (altura * altura);
+        let mostrar = (frase) =>{
+            document.write("<big>"+frase+"</big>");
+        }
+
+        if (imc < 18.5){
+            mostrar("Você está abaixo do peso!");
+        }
+        else if (imc >= 18.5 && imc <= 35) {
+            mostrar("Você está entre os dois limites!")
+        }
+        else if (imc > 35) {
+            mostrar("Você está acima do peso");
+        }
+
+    </script>    
+</body>
+</html>

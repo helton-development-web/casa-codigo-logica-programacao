@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando função para pular linha</title>
+</head>
+<body>
+    <h1>Cálculo do ano de nascimento de uma pessoa tendo como parâmetro a idade e o ano atual!</h1>
+    <p>Idade de Paulo é 25 anos</p>
+    <p>Idade de Adriana é 28 anos</p>
+    <p>Idade de Maria é 32 anos</p>
+    <p>Descubra o ano de nascimento de cada um:</p>        
+    <script>
+        let anoAtual= 2024;
+        let idadePaulo = 25;
+        let idadeAdriana = 28;
+        let idadeMaria = 32;
+        let pularLinha = function() {
+            document.write("<hr><hr>");
+            }
+        let mostra = (frase) =>{
+            document.write("<big>"+frase+"</big>");
+            document.write("<br><br><big> Casa do Código</big>");
+            pularLinha()
+        }
+            //Observação: podemos utilizar o <br> ou se preferirmos <hr>
+        document.write("Paulo nasceu no ano de: " + (anoAtual - idadePaulo));
+        pularLinha()
+        document.write("Adriana nasceu no ano de: " + (anoAtual - idadeAdriana));
+        pularLinha()
+        document.write("Maria nasceu no ano de: " + (anoAtual - idadeMaria));
+        pularLinha()
+        mostra("Aprendendo JavaScript!")
+    </script>
+   
+</body>
+</html>

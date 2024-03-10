@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Diferença de Preço por Km</title>
+</head>
+<body>
+    <h1>Cálculo de Diferença de Preço entre Gasolina e Álcool</h1>
+    <p>Preço da Gasolina<strong>R$ 2,90</strong></p>
+    <p>O consumo por litro da Gasolina<strong> 12 litros por Km</strong></p>
+    <p>Preço do Álcool<strong>R$ 2,40</strong></p>
+    <p>O consumo por litro da Álcool<strong> 7,5 litros por Km</strong></p>
+    
+    <script>
+        let precoLitroGasolina = 2.90;
+        let consumoPorLitroGasolina = 12;
+        let precoLitroAlcool = 2.40;
+        let consumoPorLitroAlcool = 7.5;
+        let precoKmGasolina = 2.90 / 12;
+        let precoKmAlcool = 2.40 / 7.5;
+        document.write("O consumo de Gasolina por KM é: " + precoKmGasolina.toFixed(2));
+        document.write("<br>");
+        document.write("O  consumo  de  Álcool  por  KM é:  " + precoKmAlcool.toFixed(2));
+    </script>
+    
+    <hr>
+
+    </script>
+</body>
+</html>

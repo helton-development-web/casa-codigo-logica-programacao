@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capturando dados com o prompt no JavaScript</title>
+</head>
+<body>
+    
+    <script>
+        let nome = prompt("Bom dia! Qual é o seu nome?");
+        let altura = prompt("Qual sua altura, " + nome + " ?");
+        let peso = prompt("Qual seu peso, " + nome + " ?");
+        let mostrarDados = function(frase){
+            document.write("<strong>" + "<big>" + frase + "<big>" + "</strong>");
+        }
+        let calculaIMC = function(altura,peso) {
+            let IMC = peso / (altura * altura);
+            mostrarDados("O seu IMC é :" + IMC.toFixed(2));
+        } 
+        calculaIMC(altura,peso);
+
+     /*   document.write("Bem vindo, " + nome);
+        let idade = prompt(nome + ", quantos anos você tem?");
+        document.write("Bem vindo, " + nome + " você tem " + idade + "anos.");
+    */
+    </script>
+
+
+</body>
+</html>
