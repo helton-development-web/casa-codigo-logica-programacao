@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinha mais usando elementos do form e array</title>
+</head>
+<body>
+    <input type="text" id="numero"/>
+    <input type="submit" id="adivinhar" value="Compare com o meu número secreto"/>
+
+    <script>
+        let segredos = [15, 34, 37, 42, 50, 58];
+
+        let caixaDoNumero = document.getElementById("numero");
+
+        let botaoClicado = function(){
+            for(let i=0;i < segredos.length; i = i +1){
+                if(segredos[i] ==  caixaDoNumero.value){
+                    alert("Parabéns! Você acertou!");
+                    return;
+                }
+            } 
+            alert("Você errou!");
+        };
+        let botaoAdivinhar = document.getElementById("adivinhar");
+        botaoAdivinhar.onclick = botaoClicado;
+
+    </script>
+
+
+</body>
+</html>

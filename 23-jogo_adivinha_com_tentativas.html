@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do Adivinha com Tentativas</title>
+</head>
+<body>
+    <script>
+        let numeroPensado = Math.round(Math.random() * 10);
+        let numeroTentativa = 1;
+
+        while(numeroTentativa <= 3){
+            let chute = prompt("Qual número você acha que é?");
+            
+            if(chute == numeroPensado){
+                alert("Parabéns você acertou!")
+                break;
+            }
+                else {
+                alert("Será que ainda tem mais tentativas?");
+            }
+                numeroTentativa++
+                
+            }
+        
+
+
+    </script>
+</body>
+</html>
