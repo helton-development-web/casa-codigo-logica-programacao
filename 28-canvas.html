@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando a tag canvas</title>
+</head>
+<body>
+    <canvas id="tela" width="600" height="400"></canvas>
+
+    <script>
+        let tela = document.getElementById("tela");
+        let c = tela.getContext("2d");
+
+        c.fillStyle="red";
+        c.fillRect(0,0,200,400);    
+        
+        c.fillStyle="green";
+        c.fillRect(400,0,200,600);
+
+        c.fillStyle="blue";
+        c.beginPath();
+        c.moveTo(300,200);
+        c.lineTo(200,400);
+        c.lineTo(400,400);
+        c.fill();
+
+        c.fillStyle="gray";
+        c.beginPath();
+        c.arc(300,200,50,0,2*3.14);
+        c.fill();
+        
+    </script>
+</body>
+</html>
